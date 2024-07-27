@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <!-- ▽header▽ -->
   <header class="header">
     <div class="logo">
       <a href="./" class="logo-link">
@@ -39,7 +40,9 @@
       </ul>
     </nav>
   </header>
+  <!-- △header△ -->
 
+  <!-- ▽main▽ -->
   <main class="main">
     <section id="main-view" class="section">
       <h2 class="main-view-title">セカイを変えるチーズを作ろう</h2>
@@ -101,32 +104,139 @@
       <div class="news-list">
         <article class="news-item">
           <a href="#" class="news-link">
-            <img src="./img/news_img.jpg" width="300" height="200" loading="lazy" alt="" class="news-image">
+            <div class="news-image-wrap">
+              <img src="./img/news_img.jpg" width="300" height="200" loading="lazy" alt="" class="news-image">
+            </div>
             <time class="news-time">2016/11/18</time>
             <h4 class="news-title">チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が渋谷でオープンしました！</h4>
           </a>
         </article>
         <article class="news-item">
           <a href="#" class="news-link">
-            <img src="./img/news_img.jpg" width="300" height="200" loading="lazy" alt="" class="news-image">
+            <div class="news-image-wrap">
+              <img src="./img/news_img.jpg" width="300" height="200" loading="lazy" alt="" class="news-image">
+            </div>
             <time class="news-time">2016/11/18</time>
             <h4 class="news-title">チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が渋谷でオープンしました！</h4>
           </a>
         </article>
         <article class="news-item">
           <a href="#" class="news-link">
-            <img src="./img/news_img.jpg" width="300" height="200" loading="lazy" alt="" class="news-image">
+            <div class="news-image-wrap">
+              <img src="./img/news_img.jpg" width="300" height="200" loading="lazy" alt="" class="news-image">
+            </div>
             <time class="news-time">2016/11/18</time>
             <h4 class="news-title">チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が渋谷でオープンしました！</h4>
           </a>
         </article>
       </div>
+      <div class="button-wrap">
+        <button type="button" class="button-primary mt-60">More</button>
+      </div>
+    </section>
+    <section id="access" class="section">
+      <h2 class="title-section text-yellow">ACCESS</h2>
+      <h3 class="title-section-sub">会社情報</h3>
+      <div class="mt-60">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.302611853781!2d139.71092695240412!3d35.66692304406082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d0012f10e49%3A0xd25b5586f6b49e2b!2z6Z2S5pyL44OT44Or!5e0!3m2!1sja!2sjp!4v1722039845309!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="access-list mt-60">
+        <dl class="access-item">
+          <dt class="access-title">学校名</dt>
+          <dd class="access-text">チーズアカデミーTOKYO</dd>
+        </dl>
+        <dl class="access-item mt-30">
+          <dt class="access-title">事務所所在地</dt>
+          <dd class="access-text">〒107-0061東京都港区北青山3-5-6 青朋ビル2F</dd>
+        </dl>
+        <dl class="access-item mt-30">
+          <dt class="access-title">TEL</dt>
+          <dd class="access-text">03-5413-5045</dd>
+        </dl>
+        <dl class="access-item mt-30">
+          <dt class="access-title">FAX</dt>
+          <dd class="access-text">03-5413-5046</dd>
+        </dl>
+        <dl class="access-item mt-30">
+          <dt class="access-title">MAIL</dt>
+          <dd class="access-text">dummy@cheeseacademy.tokyo</dd>
+        </dl>
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <h2 class="title-section text-yellow">CONTACT</h2>
+      <h3 class="title-section-sub">説明会お申し込み・お問い合わせ</h3>
+      <p class="mt-60 text-center">ぜひ1度、足を運んでみませんか。説明会は随時開催中。<br>その他、お問い合わせもお気軽にどうぞ。お待ちしております。</p>
+      <p class="mt-30 text-center">
+        ※チーズアカデミーは実際には存在しません。<br>
+        間違っても問い合わせしないようお願いいたします。</p>
+
+        <div class="form">
+          <form class=""  action="" method="post">
+            <div class="form-inner">
+              <div class="form-item">
+                <label class="form-title" for="name">名前</label>
+                <input class="" type="text" name="name" id="name">
+              </div>
+              <div class="form-item">
+                <label class="form-title" for="name-kana">カナ</label>
+                <input class="" type="text" name="name-kana" id="name-kana">
+              </div>
+              <div class="form-item">
+                <label class=""form-title for="mail">メールアドレス</label>
+                <input class="" type="email" name="mail" id="mail">
+              </div>
+              <div class="form-item contact-question01">
+                <lebel class="form-title" for="question01">チーズアカデミーを知ったきっかけ</lebel>
+                <select id="question01" name="question01" class="input-select">
+                  <option value="google">google検索</option>
+                  <option value="sns">SNS</option>
+                  <option value="introduction">紹介</option>
+                  <option value="passing-by">たまたま通りかかった</option>
+                  <option value="other">その他</option>
+              </select>
+              </div>
+              <fieldset class="form-item ontact-question02">
+                <legend class="form-title">志望動機選択肢</legend>
+                <div class="form-chexbox-list">
+                  <label class="">
+                    <input class="button-checkbox" type="checkbox" name="question02" id="starting-a-business" checked>
+                    <span>起業をしたい</span>
+                  </label>
+                  <label class="inline-flex gap-2.5 items-center py-2 cursor-pointer">
+                    <input class="button-checkbox" type="checkbox" name="question02" id="job-change">
+                    <span>チーズ系企業に就職・転職したい</span>
+                  </label>
+                  <label class="inline-flex gap-2.5 items-center py-2 cursor-pointer">
+                    <input class="button-checkbox" type="checkbox" name="question02" id="skil-up">
+                    <span>チーズと関わる仕事をしており、仕事に生かしたい</span>
+                  </label>
+                  <label class="inline-flex gap-2.5 items-center py-2 cursor-pointer">
+                    <input class="button-checkbox" type="checkbox" name="question02" id="knowledge">
+                    <span>チーズの教養を身につけたい</span>
+                  </label>
+                </div>
+              </fieldset>
+              <div class="form-item">
+                <label class="form-title" for="content">詳細</label>
+                <textarea class="" name="content" id="content"></textarea>
+              </div>
+            </div>
+
+            <div class="button-wrap">
+              <button type="button" class="button-primary mt-60">送信</button>
+            </div>
+          </form>
+        </div>
     </section>
   </main>
+  <!-- △main△ -->
 
+  <!-- ▽footer▽ -->
   <footer class="footer">
-
+    <p class="text-center">copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.</p>
   </footer>
+  <!-- △footer△ -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -59,14 +59,22 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-inline: auto;
 	width: 300px;
 	height: 50px;
 	font-size: 18px;
 	color: #FFF;
+	background-color:  var(--color-yellow);
+	border: 1px solid var(--color-yellow);
+	transition: ease .2s;
+
 }
 
-.button-primary {
-	
+.button-primary:hover {
+	color: var(--color-yellow);
+	background-color: #FFF;
+	transition: ease .2s;
+
 }
 
 /*
@@ -148,7 +156,7 @@ p {
 }
 
 .section {
-	padding: 60px 0;
+	padding: 60px 0 0;
 }
 
 .footer {
@@ -172,6 +180,7 @@ p {
 	flex-wrap: nowrap;
 	gap: 50px;
 	background-color: var(--bg-color-gray);
+	height: 450px;
 }
 
 .course-summary-item:nth-child(even) {
@@ -189,6 +198,10 @@ p {
 	padding: 120px 0;
 }
 
+#news.section {
+	padding-bottom: 60px;
+}
+
 .news-list {
 	display: flex;
 	gap: 30px;
@@ -203,6 +216,31 @@ p {
 	flex-direction: column;
 	width: 300px;
 	height: auto;
+	transition: ease .2s;
+
+}
+
+.news-image-wrap {
+	width: 100%;
+	overflow: hidden;
+}
+
+.news-link img {
+	transition: ease .2s;
+
+	transform: scale(1);
+}
+
+.news-link:hover img {
+	transition: ease .2s;
+
+	transform: scale(1.2);
+}
+
+.news-link:hover .news-title {
+	transition: ease .2s;
+
+	color: var(--color-yellow);
 }
 
 .news-time {
@@ -216,6 +254,66 @@ p {
 	font-size: 15px;
 }
 
+#access.section {
+	padding-bottom: 60px;
+	background-color: var(--bg-color-gray);
+}
+
+.access-list {
+	width: 100%;
+
+}
+
+.access-item {
+	display: flex;
+	line-height: 50px;
+	margin-inline: auto;
+	width: calc(100px + 50px + 370px);
+}
+
+.access-title {
+	margin-right: 50px;
+	min-width: 100px;
+}
+
+.access-text {
+	min-width: 370px;
+}
+
+#contact.section {
+	padding-bottom: 140px;
+}
+
+.form-inner {
+	border-top: 1px solid #bfbfbf;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+input[text] ,
+input[type="text"],
+input[type="email"],
+textarea,
+.input-select {
+	margin: 8px;
+	border: 1px solid #bfbfbf;
+}
+
+.form-item {
+	display: flex;
+}
+
+.form-chexbox-list {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.footer {
+	padding: 30px 0;
+	background-color: var(--bg-color-darkgray);
+	line-height: 1;
+	color: #FFF;
+}
 
 /*
 	UTILITY
@@ -230,6 +328,10 @@ p {
 
 .text-center {
 	text-align: center;
+}
+
+.mt-30 {
+	margin-top: 30px;
 }
 
 .mt-40 {
