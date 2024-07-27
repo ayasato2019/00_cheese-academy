@@ -130,8 +130,8 @@
           </a>
         </article>
       </div>
-      <div class="button-wrap">
-        <button type="button" class="button-primary mt-60">More</button>
+      <div class="button-wrap mt-60">
+        <button type="button" class="button-primary">More</button>
       </div>
     </section>
     <section id="access" class="section">
@@ -176,19 +176,20 @@
             <div class="form-inner">
               <div class="form-item">
                 <label class="form-title" for="name">名前</label>
-                <input class="" type="text" name="name" id="name">
+                <input class="form-input" type="text" name="name" id="name">
               </div>
               <div class="form-item">
                 <label class="form-title" for="name-kana">カナ</label>
-                <input class="" type="text" name="name-kana" id="name-kana">
+                <input class="form-input" type="text" name="name-kana" id="name-kana">
               </div>
               <div class="form-item">
-                <label class=""form-title for="mail">メールアドレス</label>
-                <input class="" type="email" name="mail" id="mail">
+                <label class="form-title" for="mail">メールアドレス</label>
+                <input class="form-input" type="email" name="mail" id="mail">
               </div>
               <div class="form-item contact-question01">
-                <lebel class="form-title" for="question01">チーズアカデミーを知ったきっかけ</lebel>
-                <select id="question01" name="question01" class="input-select">
+                <lebel class="form-title" for="question01">チーズアカデミーを<br>知ったきっかけ</lebel>
+                <select id="question01" name="question01" class="form-input-select">
+                  <option value="" selected disabled></option>
                   <option value="google">google検索</option>
                   <option value="sns">SNS</option>
                   <option value="introduction">紹介</option>
@@ -196,35 +197,35 @@
                   <option value="other">その他</option>
               </select>
               </div>
-              <fieldset class="form-item ontact-question02">
-                <legend class="form-title">志望動機選択肢</legend>
+              <div class="form-item ontact-question02">
+                <p class="form-title">志望動機選択肢</p>
                 <div class="form-chexbox-list">
-                  <label class="">
+                  <label class="form-input-checkbox">
                     <input class="button-checkbox" type="checkbox" name="question02" id="starting-a-business" checked>
                     <span>起業をしたい</span>
                   </label>
-                  <label class="inline-flex gap-2.5 items-center py-2 cursor-pointer">
+                  <label class="form-input-checkbox">
                     <input class="button-checkbox" type="checkbox" name="question02" id="job-change">
                     <span>チーズ系企業に就職・転職したい</span>
                   </label>
-                  <label class="inline-flex gap-2.5 items-center py-2 cursor-pointer">
+                  <label class="form-input-checkbox">
                     <input class="button-checkbox" type="checkbox" name="question02" id="skil-up">
                     <span>チーズと関わる仕事をしており、仕事に生かしたい</span>
                   </label>
-                  <label class="inline-flex gap-2.5 items-center py-2 cursor-pointer">
+                  <label class="form-input-checkbox">
                     <input class="button-checkbox" type="checkbox" name="question02" id="knowledge">
                     <span>チーズの教養を身につけたい</span>
                   </label>
                 </div>
-              </fieldset>
+              </div>
               <div class="form-item">
                 <label class="form-title" for="content">詳細</label>
-                <textarea class="" name="content" id="content"></textarea>
+                <textarea class="" name="content" id="content" rows="4" cols="50"></textarea>
               </div>
             </div>
 
-            <div class="button-wrap">
-              <button type="button" class="button-primary mt-60">送信</button>
+            <div class="button-wrap mt-30">
+              <button type="button" class="button-primary">送信</button>
             </div>
           </form>
         </div>
