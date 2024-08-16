@@ -45,7 +45,7 @@ p {
 	text-align: center;
 	line-hieght: 1;
 	font-weight: bold;
-	font-size: var(--text-lg);
+	font-size: var(--text-2xl);
 }
 
 .title-section-sub {
@@ -221,13 +221,11 @@ p {
 
 .news-link img {
 	transition: ease .2s;
-
 	transform: scale(1);
 }
 
 .news-link:hover img {
 	transition: ease .2s;
-
 	transform: scale(1.2);
 }
 
